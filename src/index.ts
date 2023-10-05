@@ -1,10 +1,11 @@
+import "module-alias/register"
 import bodyParser from "body-parser"
 import express from "express"
 import dotenv from "dotenv"
 dotenv.config()
 
 import "./connection"
-import productsController from "./controllers/products.controller"
+import productsController from "@/controllers/products.controller"
 import cors from "cors"
 
 const PORT = process.env.PORT || 8080
