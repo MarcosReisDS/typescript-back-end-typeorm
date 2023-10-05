@@ -15,6 +15,10 @@ app.get("/api/products/:id", productsController.findOne)
 
 app.post("/api/products", productsController.create)
 
+app.put("/api/products/:id", productsController.update)
+
+app.delete("/api/products/:id", productsController.delete)
+
 app.get("/", (req, res) => {
   res.send("Tudo nosso!")
 })
